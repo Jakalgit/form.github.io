@@ -1,0 +1,25 @@
+@keyframes rotate {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+@keyframes fade-anim {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.rotate {
+  animation: rotate 0.8s linear infinite;
+}
+.in-fade {
+  animation: fade-anim 0.25s forwards;
+}
+.out-fade {
+  animation: fade-anim 0.25s reverse;
+}
